@@ -5,11 +5,13 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv, find_dotenv
 
-#load_dotenv(find_dotenv())
-#open_ai_key = os.getenv("open_ai_key")
-#google_gemini_api_key = os.getenv("google_gemini_api_key")
-#client = OpenAI(api_key=open_ai_key)
-#genai.configure(api_key=google_gemini_api_key)
+'''
+load_dotenv(find_dotenv())
+open_ai_key = os.getenv("open_ai_key")
+google_gemini_api_key = os.getenv("google_gemini_api_key")
+client = OpenAI(api_key=open_ai_key)
+genai.configure(api_key=google_gemini_api_key)
+'''
 
 
 
@@ -38,6 +40,7 @@ model = genai.GenerativeModel(
   system_instruction="Generate a comprehensive, engaging blog post relevant to the given title “Effects of Generative AI” and keywords “Artificial Creativity, Ethical Implications, Technology Innovation, Machine Learning Applications, AI Impact on Society”. Make sure to incorporate these keywords in the blog post. The blog should be approximately 500 words in length, suitable for an online audience. Ensure the content is original, informative, and maintains a consistent tone throughout.",
 )
 '''
+
 st.set_page_config(layout='wide')
 
 
